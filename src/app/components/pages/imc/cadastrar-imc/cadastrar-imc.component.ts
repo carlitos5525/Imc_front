@@ -12,10 +12,10 @@ import { Usuario } from 'src/app/models/usuario.model';
 })
 export class CadastrarImcComponent implements OnInit {
 
-  altura?: number;
-  peso?: number;
-  usuarioId?: number;
-  usuarios?: Usuario[];
+  altura!: number;
+  peso!: number;
+  usuarioId!: number;
+  usuarios!: Usuario[];
 
   constructor(private http: HttpClient, private router: Router, private _snackBar: MatSnackBar) { }
 

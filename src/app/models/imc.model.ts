@@ -5,7 +5,7 @@ export interface Imc{
     altura: number;
     peso: number;
     imc_resultado?: number;
-    classificacao_imc?: string;
+    classificacao_IMC?: string;
     usuarioId: number;
     usuario?: Usuario
 
