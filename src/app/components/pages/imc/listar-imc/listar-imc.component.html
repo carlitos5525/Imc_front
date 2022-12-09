@@ -1,0 +1,31 @@
+<mat-card class="container">
+    <mat-card-header>
+      <mat-card-title> Listar IMCs </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <table>
+        <tr>
+          <th>Nome</th>
+          <th>Altura</th>
+          <th>Peso</th>
+          <th>IMC</th>
+          <th>Classificação</th>
+          <th></th>
+          
+        </tr>
+        <tr *ngFor="let imc of imcs">
+          <td>{{imc.usuario?.nome}}</td>
+          <td>{{imc.altura}}</td>
+          <td>{{imc.peso}}</td>
+          <td>{{imc.imc_resultado}}</td>
+          <td>{{imc.classificacao_imc}}</td>
+          <td>
+            <a type="button" mat-raised-button
+                color="warn" routerLink="/pages/imc/editar/{{ imc.id }}"> Palpitar </a> </td>
+          
+        </tr>
+      </table>
+    
+    </mat-card-content>
+  </mat-card>
+  

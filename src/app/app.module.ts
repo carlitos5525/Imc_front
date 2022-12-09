@@ -17,11 +17,17 @@ import { HttpClientModule } from "@angular/common/http";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { CadastrarUsuarioComponent } from './components/pages/usuario/cadastrar-usuario/cadastrar-usuario.component';
+import { CadastrarImcComponent } from './components/pages/imc/cadastrar-imc/cadastrar-imc.component';
+import { ListarImcComponent } from './components/pages/imc/listar-imc/listar-imc.component';
+import { EditarImcComponent } from './components/pages/imc/editar-imc/editar-imc.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CadastrarUsuarioComponent
+    CadastrarUsuarioComponent,
+    CadastrarImcComponent,
+    ListarImcComponent,
+    EditarImcComponent
   ],
   imports: [
     BrowserModule,
